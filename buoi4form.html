@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+
+    <title>bai 4</title>
+</head>
+<body>
+    <h1>Form tạo thông tin</h1>
+    <form action="">
+        <input type="text" name="txt">
+        <!-- input nếu không truyền type thì mặc định la text -->
+         <div><p>Giới thiệu</p><textarea name="gioiThieu"></textarea></div>
+         <div><p>nhập email</p><input type="email" name="email"></div>
+         <!-- số dầu tiên 0
+          số tiếp theo 9,3,6,8
+          8 số cuối 0-9 -->
+         <div><p>nhập sdt</p><input type="tel" name="sdt" placeholder="123" required pattern="([0-9]{1}(-[0-9]{3}) (-[0-9]{3}) (-[0-9]{4}))"></div>
+         <div><p>giới tính</p>
+            <input type="radio" name="gender" value="Male">Nam<br>
+            <input type="radio" name="gender" value="Female">Nữ
+        </div>
+        <div>
+            <p>Sở thích</p>
+            <p>nghe nhạc<input type="checkbox" name="soThich" value="music"></p>
+            <p>chơi game<input type="checkbox" name="soThich" value="game"></p>
+            <p>nghe nhạc<input type="checkbox" name="soThich" value="musix"></p>
+        </div>
+         <div>
+            <input type="submit">
+         </div>
+    </form>
+</body>
+</html>
