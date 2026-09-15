@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lienKet{
+            color: white;
+            text-decoration: none;
+            
+        }
+        ul.danhSachMuc{
+            padding: 0;
+            margin: 0;
+            list-style: none;/*bo dau cham truoc dong cua danh sach ul, li*/
+            display: flex;
+            gap: 10px;
+            
+        }
+        body{
+            margin: 0;
+        }
+        .danhMuc{
+            background-color: #198cf0;
+            padding: 10px;
+            
+        }
+        .main{
+            display: flex;
+            width: 100%;
+        }
+        .trai{
+            width: 20%;
+            height: 100vh;
+            border-right: 1px solid blue;/*3 tham so duong vien: do day, loai duong vien, mau sac*/
+        }
+        .khoiDangNhap{
+            width: 100%;
+            height: 100px;
+        }
+        form{
+            width: 80%;
+            margin: 10px auto;
+        }
+        .khoiThongTin{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        p{
+            margin: 0;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .quenMatKhau{
+            display: flex;
+            text-decoration: none;
+            margin: 5px;
+            justify-content: flex-end;
+
+        }
+        button{
+            width: 100%;
+            padding: 5px;
+            border-radius: 10px;
+            
+        }
+        .login{
+            margin-bottom: 10px;
+        }
+
+        .Phai{
+            width: 80%;
+            display: block;
+        }
+        .danhSachTin{
+        
+        }
+        .tin{
+            width: 95%;
+            height: 250px;
+            margin: 20px auto;
+            border: 1px solid blue;
+            border-radius: 10px;
+        }
+        .chucNang{
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            margin: 5px auto;
+            padding: 5px;
+            border-bottom: 1px solid blue;
+        }
+        .xemTiep{
+            color: aqua;
+            text-decoration: none;
+        }
+        .noiDung{
+            display: flex;
+            width: 75%;
+        }
+        .anhTinTuc{
+            height: 125px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .thongBaoT{
+            width: 25%;
+            margin-left: 50px;
+        }
+        .noiDungTB{
+            width: 100%;
+            display: flex;
+        }
+        .thongBaoTrai{
+            display: flex;
+            width: 50%;
+            border-right: 1px solid grey;
+            margin-right: 20px;
+        }
+        .thongBaoPhai{
+            display: block;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+        }
+        .dong{
+            display: flex;
+            
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        .noiDungTrai.TB{
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="danhMuc">
+            <nav>
+                <ul class="danhSachMuc">
+                    <li class="muc"><a class="lienKet" href="#"></a></li>
+                    <li class="muc"><a class="lienKet" href="#">Thuc tap, Do an</a></li>
+                    <li class="muc"><a class="lienKet" href="#">Thu  tuc mot cua</a></li>
+                    <li class="muc"><a class="lienKet" href="#">Mot cua online</a></li>
+                    <li class="muc"><a class="lienKet" href="#">E-mail HUMG</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+        <div class="main">
+            <div class="trai">
+                <div class="khoiDangNhap">
+                    <form action="">
+                        <div class="khoiThongTin">
+                            <p>Tai khoan</p>
+                            <input type="text" name="taiKhoan">
+                        </div>
+                        <div class="khoiThongTin">
+                            <p>Mat khau</p>
+                            <input type="password" name="matKhau">
+                        </div>
+                        <div class="quenMatKhau">
+                            <a class="quenMatKhauLK" href="">Quen mat khau ?</a>
+                        </div>
+                        <div class="khoiThongTin">
+                            <button class="login">Dang nhap</button>
+                            <button class="login365">Dang nhap voi Microsoft office 365</button>
+                        </div>
+                    </form>
+                    <div>
+                        <a href="">Trang chu</a>
+                    </div>
+                    <div>
+                        <a href="">Khao sat danh gia</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="phai">
+                
+                <div class="danhSachTin">                  
+                    <div class="tin">
+                        <div class="chucNang">
+                            <a class="tinTuc" href="">Tin tức</a>
+                            <a class="xemTiep" href="">Xem tiếp</a>
+                        </div>
+                        <div class="noiDung">
+                            <div>
+                                <img class="anhTinTuc" src="anh.png" alt="">
+                                <p>05/05/2026</p>
+                                <p>Ve viec dang ki khoi luong hoc tap hoc ki phu 2025-2026</p>
+                            </div>
+                            <div>
+                                <img class="anhTinTuc" src="anh.png" alt="">
+                                <p>15/04/2026</p>
+                                <p>Ve viec nghi hoc</p>
+                            </div>
+                            <div>
+                                <img class="anhTinTuc" src="anh.png" alt="">
+                                <p>24/09/2024</p>
+                                <p>Truong dai hoc Mo-Dia chat dat kiem chung chat luong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="danhSachTin">                  
+                    <div class="tin">
+                        <div class="chucNang">
+                            <a class="tinTuc" href="">Thông báo</a>
+                            <a class="xemTiep" href="">Xem tiếp</a>
+                        </div>
+                        <div class="noiDungTB">
+                            <div class="thongBaoTrai">
+                                <div class="ThongBaoT">
+                                    <img class="anhTinTuc" src="anh.png" alt="">
+                                    <p style="padding-left: 170px">27/8/2026</p>
+                                    <p>Ve viec ghep lop va mo lop nam hoc 2026-2027</p>
+                                </div>
+                                <div class="ThongBaoT">
+                                    <img class="anhTinTuc" src="anh.png" alt="">
+                                    <p style="padding-left: 170px">24/08/2026</p>
+                                    <p>Thong bao ve viec nghi hoc nhan dip quoc khanh 2/9</p>
+                                </div>
+                            </div>
+                            <div class="thongBaoPhai">
+                                <div class="dong" style="border-bottom: 1px solid gray;">
+                                    <div class="TB" style="width: 80%;">
+                                        <p>Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</p>
+                                    </div>
+                                    <div class="ngay" style="width: 20%;">
+                                        <p>11/08/2026</p>
+                                    </div>
+                                </div>
+                                <div class="dong" style="border-bottom: 1px solid gray;">
+                                    <div class="TB" style="width: 80%;">
+                                        <p>Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027</p>
+                                    </div>
+                                    <div class="ngay" style="width: 20%;">
+                                        <p>20/07/2026</p>
+                                    </div>
+                                </div>
+                                <div class="dong">
+                                    <div class="TB" style="width: 80%;">
+                                        <p>Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026</p>
+                                    </div>
+                                    <div class="ngay" style="width: 20%; ">
+                                        <p>16/07/2026</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
