@@ -81,7 +81,7 @@
         }
         .tin{
             width: 95%;
-            height: 250px;
+            /*height: 250px;*/
             margin: 20px auto;
             border: 1px solid blue;
             border-radius: 10px;
@@ -100,16 +100,25 @@
         }
         .noiDung{
             display: flex;
-            width: 75%;
+            justify-content: space-around;
+        }
+        .chiTietBai{
+            width: 23%;
+            margin: 10px auto;
+        }
+        .ngayDang{
+            text-align: end;
         }
         .anhTinTuc{
             height: 125px;
             width: 250px;
             border-radius: 10px;
+            object-fit: cover;
         }
         .thongBaoT{
-            width: 25%;
-            margin-left: 50px;
+            width: 23%;
+
+            
         }
         .noiDungTB{
             width: 100%;
@@ -119,12 +128,13 @@
             display: flex;
             width: 50%;
             border-right: 1px solid grey;
-            margin-right: 20px;
+            
+            justify-content: space-around;
         }
         .thongBaoPhai{
             display: block;
             width: 50%;
-            margin: 0;
+            margin-left: 10px;
             padding: 0;
         }
         .dong{
@@ -134,8 +144,21 @@
             margin-bottom: 20px;
         }
         .noiDungTrai.TB{
-
+            
         }
+        .noiDungCD{
+            display: flex;
+        }
+        .bon{
+            width: 45%;
+            
+        }
+        .anh4{
+            width: 100px;
+            height: 100px;
+            
+        }
+
     </style>
 </head>
 <body>
@@ -190,20 +213,25 @@
                             <a class="xemTiep" href="">Xem tiếp</a>
                         </div>
                         <div class="noiDung">
-                            <div>
+                            <div class="chiTietBai">
                                 <img class="anhTinTuc" src="anh.png" alt="">
-                                <p>05/05/2026</p>
-                                <p>Ve viec dang ki khoi luong hoc tap hoc ki phu 2025-2026</p>
+                                <p class="ngayDang">05/05/2026</p>
+                                <p class="tieuDe">Ve viec dang ki khoi luong hoc tap hoc ki phu 2025-2026</p>
+                            </div>
+                            <div class="chiTietBai">
+                                <img class="anhTinTuc" src="anh.png" alt="">
+                                <p class="ngayDang">15/04/2026</p>
+                                <p class="tieuDe">Ve viec nghi hoc</p>
+                            </div>
+                            <div class="chiTietBai">
+                                <img class="anhTinTuc" src="anh.png" alt="">
+                                <p class="ngayDang">24/09/2024</p>
+                                <p class="tieuDe">Truong dai hoc Mo-Dia chat dat kiem chung chat luong</p>
                             </div>
                             <div>
-                                <img class="anhTinTuc" src="anh.png" alt="">
-                                <p>15/04/2026</p>
-                                <p>Ve viec nghi hoc</p>
-                            </div>
-                            <div>
-                                <img class="anhTinTuc" src="anh.png" alt="">
-                                <p>24/09/2024</p>
-                                <p>Truong dai hoc Mo-Dia chat dat kiem chung chat luong</p>
+                                <img class="anhTinTuc" src="" alt="">
+                                <p class="ngayDang"></p>
+                                <p class="tieuDe"></p>
                             </div>
                         </div>
                     </div>
@@ -218,13 +246,13 @@
                             <div class="thongBaoTrai">
                                 <div class="ThongBaoT">
                                     <img class="anhTinTuc" src="anh.png" alt="">
-                                    <p style="padding-left: 170px">27/8/2026</p>
-                                    <p>Ve viec ghep lop va mo lop nam hoc 2026-2027</p>
+                                    <p class="ngayDang" style="padding-left: 170px">27/8/2026</p>
+                                    <p class="tieuDe">Ve viec ghep lop va mo lop nam <br> hoc 2026-2027</p>
                                 </div>
                                 <div class="ThongBaoT">
                                     <img class="anhTinTuc" src="anh.png" alt="">
-                                    <p style="padding-left: 170px">24/08/2026</p>
-                                    <p>Thong bao ve viec nghi hoc nhan dip quoc khanh 2/9</p>
+                                    <p class="ngayDang" style="padding-left: 170px">24/08/2026</p>
+                                    <p class="tieuDe">Thong bao ve viec nghi hoc nhan dip <br> quoc khanh 2/9</p>
                                 </div>
                             </div>
                             <div class="thongBaoPhai">
@@ -232,7 +260,7 @@
                                     <div class="TB" style="width: 80%;">
                                         <p>Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</p>
                                     </div>
-                                    <div class="ngay" style="width: 20%;">
+                                    <div  style="width: 20%;">
                                         <p>11/08/2026</p>
                                     </div>
                                 </div>
@@ -257,6 +285,81 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="danhSachTin">                  
+                    <div class="tin">
+                        <div class="chucNang">
+                            <a class="tinTuc" href="">Hướng dẫn</a>
+                            <a class="xemTiep" href="">Xem tiếp</a>
+                        </div>
+                        <div class="noiDungTB">
+                            <div class="thongBaoTrai">
+                                <div class="ThongBaoT">
+                                    <img class="anhTinTuc" src="anh.png" alt="">
+                                    <p class="ngayDang" style="padding-left: 170px">18/11/2025</p>
+                                    <p class="tieuDe">Hướng dẫn đang kí khối lượng học tập</p>
+                                </div>
+                                <div class="ThongBaoT">
+                                    <img class="anhTinTuc" src="anh.png" alt="">
+                                    <p class="ngayDang" style="padding-left: 170px">01/08/2023</p>
+                                    <p class="tieuDe">Hướng dẫn lấy lại mật khẩu trang web</p>
+                                </div>
+                            </div>
+                            <div class="thongBaoPhai">
+                                <div class="dong" style="border-bottom: 1px solid gray;">
+                                    <div class="TB" style="width: 80%;">
+                                        <p>Hướng dẫn lấy lại mật khẩu e-mail HUMG</p>
+                                    </div>
+                                    <div  style="width: 20%;">
+                                        <p>01/08/2023</p>
+                                    </div>
+                                </div>
+                                <div class="dong" style="border-bottom: 1px solid gray;">
+                                    <div class="TB" style="width: 80%;">
+                                        <p>Hướng dẫn đăng ký khối lượng học tập tại trang web daotaodaihoc.humg.edu.vn</p>
+                                    </div>
+                                    <div class="ngay" style="width: 20%;">
+                                        <p>19/12/2024</p>
+                                    </div>
+                                </div>
+                                <div class="dong">
+                                    <div class="TB" style="width: 80%;">
+                                        <p>Hướng dẫn kiểm tra, tra cứu trực tuyến thông tin về bằng tốt nghiệp của trường Đại học Mỏ - Địa chất</p>
+                                    </div>
+                                    <div class="ngay" style="width: 20%; ">
+                                        <p>11/05/2021</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="danhSachTin">                  
+                    <div class="tin">
+                        <div class="chucNang">
+                            <a class="tinTuc" href="">Cài đặt app mobile</a>
+                            <a class="xemTiep" href=""></a>
+                        </div>
+                        <div class="noiDungCD">
+                            <div class="bon">
+                                <div class="" style="display:flex;justify-content: center;margin:10px;">
+                                    <img class="anh4" src="" alt="">
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="bon">
+                                <div style="display:flex;justify-content: center;margin:10px;">
+                                    <img class="anh4" src="" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 
                 
             </div>
