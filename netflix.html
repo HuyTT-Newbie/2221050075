@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #2f2c38;
+            color: white;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul.danhSachMuc{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        a.lienKetMuc{
+            color: #DBDBDD;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .muc{
+            padding: 15px;
+            border-radius: 25px;
+        }
+        .muc:hover{
+            background-color: grey;
+        }
+        .logo{
+            width: 10%;
+            padding: 0;
+        }
+        .dangChon{
+            background-color: #4e4b52;
+        }
+        .avata{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .banner{
+            background-color: aliceblue;
+            width: 95%;
+            /*height: 40vh;*/
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .bannerAnh{
+            width: 100%;
+            border-radius: 20px;
+        }
+        .danhSachTheLoai{
+            width: 95%;
+            background-color: red;
+            height: 20vh;
+            margin-top: 20px auto;
+        }
+        .phim{
+            display: flex;
+            justify-content: space-between;
+        }
+        .phimPoster{
+            width: 24%;
+            height: 15vh;
+            border-radius: 15px;
+        }
+        .danhSachNhanVat{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nhanVat{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="danhMuc">
+            <ul class="danhSachMuc">
+                <img class="logo" src="logo.svg" alt="">
+                <li class="muc dangChon"><a class="lienKetMuc " href="#">Trang chủ</a></li>
+                <li class="muc"><a class="lienKetMuc" href="#">Nhân vật</a></li>
+                <li class="muc"><a class="lienKetMuc" href="#">Series</a></li>
+                <li class="muc"><a class="lienKetMuc" href="#">Phim</a></li>
+                <li class="muc"><a class="lienKetMuc" href="#">Mới & phổ biến</a></li>
+                <li class="muc"><a class="lienKetMuc" href="#">Netflix của tôi</a></li>
+                <li class="muc"><a class="lienKetMuc" href="#">Tìm theo ngôn ngữ</a></li>
+                    
+            </ul>
+        </nav>
+        <div class="chucNang">
+            <div class="timKiem"></div>
+            <div class="thongTinNguoiDung">
+                <img class="avata" src="logoNF.png" alt="">
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <img class="bannerAnh" src="banner.jpg" alt="">
+        </div>
+        <div class="danhSachTheLoai">
+            <div class="theLoai">
+                <div class="tenTheLoai">
+                    <h2>Có thể bạn chưa xem</h2>
+                </div>
+                <div class="danhSachPhim">
+                    <div class="phim">
+                        <img class="phimPoster" src="banner.jpg" alt="">
+                        <img class="phimPoster" src="banner.jpg" alt="">
+                        <img class="phimPoster" src="banner.jpg" alt="">
+                        <img class="phimPoster" src="banner.jpg" alt="">
+                        <img class="phimPoster" src="banner.jpg" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="theLoai">
+                <div class="tenTheLoai">
+                    <h2>Nhân vật</h2>
+                </div>
+                <div class="danhSachNhanVat">
+                    
+                    <img class="nhanVat" src="banner.jpg" alt="">
+                    <img class="nhanVat" src="banner.jpg" alt="">
+                    <img class="nhanVat" src="banner.jpg" alt="">
+                    <img class="nhanVat" src="banner.jpg" alt="">
+                    <img class="nhanVat" src="banner.jpg" alt="">
+
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
