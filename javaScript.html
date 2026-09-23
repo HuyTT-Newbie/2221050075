@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- internal javaScript -->
+    <script>
+        //in ra màn hình
+        document.writeln("Hello world <br>");
+        //khai báo biến
+        var name="Quang Anh";
+        document.writeln(name+"<br>");
+        name="Ly";
+        document.writeln(name+"<br>");
+        var year=2026;
+        document.writeln(year+"<br>");
+        var so1=10;
+        var so2=5;
+        var ketQua=0;
+        //phép cộng
+        ketQua=so1+so2;
+        document.writeln(ketQua+"<br>");
+        //phép trừ
+        ketQua = so1-so2;
+        document.writeln(ketQua+"<br>");
+        //phép nhân
+        ketQua = so1 * so2;
+        document.writeln(ketQua+"<br>");
+        //phép chia
+        ketQua=so1/so2;
+        document.writeln(ketQua+"<br>");
+        //phép chia lấy dư
+        ketQua=so1%so2;
+        document.writeln(ketQua+"<br>");
+        //++
+        document.writeln("<br>");
+        document.writeln(++so1);
+        //--
+        document.writeln("<br>");
+        //document.writeln(--so1);
+        //+=
+        so1+=so2;
+        document.writeln("<br>");
+        document.writeln(so1);
+        //-=
+        so1-=so2;
+        document.writeln("<br>");
+        document.writeln(so1);
+
+        var ho ="Đỗ";
+        document.writeln("<br>"+ ho + " " + name);
+        document.writeln("<br>");
+        document.writeln(ho.length);
+        document.writeln("<br>");
+        //typeof kiểm tra kiểu dữ liệu của biến
+        document.writeln(typeof(ho));
+        document.writeln("<br>");
+        //indexof
+        var hoVaTen="Lương Quang Anh";
+        document.write(hoVaTen.indexOf("Quang"));
+        document.writeln("<br>");
+        document.write(hoVaTen.includes("Anh"));
+        document.writeln("<br>");
+        document.write(hoVaTen.startsWith("Lương"));
+        document.writeln("<br>");
+        document.write(hoVaTen.replace("Lương","Đỗ"));
+        document.writeln("<br>");
+        document.write(hoVaTen.toUpperCase());
+    </script>
+    <!-- external javaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
