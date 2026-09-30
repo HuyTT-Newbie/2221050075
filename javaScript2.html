@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- internal javaScript -->
+    <script>
+        //in ra màn hình
+        document.writeln("Hello world <br>");
+        //khai báo biến
+        var name="Quang Anh";
+        document.writeln(name+"<br>");
+        name="Ly";
+        document.writeln(name+"<br>");
+        var year=2026;
+        document.writeln(year+"<br>");
+        var so1=10;
+        var so2=5;
+        var ketQua=0;
+        //phép cộng
+        ketQua=so1+so2;
+        document.writeln(ketQua+"<br>");
+        //phép trừ
+        ketQua = so1-so2;
+        document.writeln(ketQua+"<br>");
+        //phép nhân
+        ketQua = so1 * so2;
+        document.writeln(ketQua+"<br>");
+        //phép chia
+        ketQua=so1/so2;
+        document.writeln(ketQua+"<br>");
+        //phép chia lấy dư
+        ketQua=so1%so2;
+        document.writeln(ketQua+"<br>");
+        //++
+        document.writeln("<br>");
+        document.writeln(++so1);
+        //--
+        document.writeln("<br>");
+        //document.writeln(--so1);
+        //+=
+        so1+=so2;
+        document.writeln("<br>");
+        document.writeln(so1);
+        //-=
+        so1-=so2;
+        document.writeln("<br>");
+        document.writeln(so1);
+
+        var ho ="Đỗ";
+        document.writeln("<br>"+ ho + " " + name);
+        document.writeln("<br>");
+        document.writeln(ho.length);
+        document.writeln("<br>");
+        //typeof kiểm tra kiểu dữ liệu của biến
+        document.writeln(typeof(ho));
+        document.writeln("<br>");
+        //indexof
+        var hoVaTen="Lương Quang Anh";
+        document.write(hoVaTen.indexOf("Quang"));
+        document.writeln("<br>");
+        document.write(hoVaTen.includes("Anh"));
+        document.writeln("<br>");
+        document.write(hoVaTen.startsWith("Lương"));
+        document.writeln("<br>");
+        document.write(hoVaTen.replace("Lương","Đỗ"));
+        document.writeln("<br>");
+        document.write(hoVaTen.toUpperCase());
+
+        //date
+        var homNay=new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+        var ngay=new Date("8/6/2025");
+        document.writeln(ngay);
+
+        document.writeln("<br>");
+        var namNay=homNay.getFullYear();
+        document.write(namNay);
+
+        document.writeln("<br>");
+        var thangNay=homNay.getMonth() +1;
+        document.write(thangNay);
+
+        document.writeln("<br>");
+        var ngayHomNay=homNay.getDate();
+        document.write(ngayHomNay);
+
+        document.writeln("<br>");
+        var thu=homNay.getDay() +1;
+        document.write("Hôm nay là thứ"+thu+" ngày "+ngayHomNay+" tháng "+thangNay+" năm "+namNay);
+
+        //mảng
+        var mangSo=[1,2,3,4,5];
+        document.writeln("<br>");
+        document.write(mangSo[2]);
+        document.writeln("<br>");
+        document.write(mangSo.length);
+        document.writeln("<br>");
+        
+        var mangTen=["Quang Anh", "Ly", "Thang"];
+        document.write(mangTen[2]);
+
+        document.writeln("<br>");
+        var mang=[1,2,3,4,5,"Quang Anh", "Ly", "Thang"];
+        document.write(mang[5]);
+
+        var d=mang.concat(mangTen,mangSo);
+        document.writeln("<br>");
+        document.write(d.join("-"));
+
+        document.writeln("<br>");
+        document.write(d.pop());
+
+        d.push("Duy")
+        document.writeln("<br>");
+        document.write(d);
+
+        document.writeln("<br>");
+        document.write(mangSo.reverse());
+
+        //object
+        var thongTinSinhVien={
+            ten: "Luong Quang Anh",
+            ngaySinh: 2006,
+            queQuan: {
+                thanhPho: "Bac Ninh",
+                phuong: "Chu",
+            }
+        };
+        document.write(thongTinSinhVien.queQuan.thanhPho);
+        var tuoi=namNay-thongTinSinhVien.ngaySinh;
+        thongTinSinhVien.tuoi=tuoi;
+        //console.log(thongTinSinhVien);
+        //boolean:true Nam/false Nữ
+        thongTinSinhVien.gioiTinh = true;
+
+        var thongTin=[
+            {
+            ten: "Sinh Viên A",
+            ngaySinh: 2006,
+            queQuan: {
+                thanhPho: "Bac Ninh",
+                phuong: "Chu",
+            }
+        },
+        {
+            ten: "Sinh Viên B",
+            ngaySinh: 2006,
+            queQuan: {
+                thanhPho: "Bac Ninh",
+                phuong: "Chu",
+            }
+        }
+        ];
+
+        //So sánh  ==,!=,<,>
+        //=== so sánh cả giá trị và kiểu dữ liệu
+        var so1=5;
+        var s02=10;
+        document.write(so1==so2);
+
+        //câu điều kiện
+        if(thu > 6){
+            document.write("được nghỉ học");
+        }else if(thu==6){
+            document.write("sắp nghỉ học");
+
+    }else{
+            document.write("đi học");
+        };
+
+        var so=10;
+        if(so%2==0){
+            document.write("Số chẵn");
+        }else{
+            document.write("Số lẻ");
+        }
+
+
+
+
+
+
+
+    </script>
+    <!-- external javaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
