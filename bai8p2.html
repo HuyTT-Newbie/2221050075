@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //funtion
+        function sayHello(){
+            document.write("<br>");
+            document.write("Hello");
+        }
+        sayHello();
+        function sayHello2(ten){
+            document.write("<br>");
+            document.write("Xin chào bạn"+ten);
+        }
+        sayHello2("Anh");
+        
+        function nhapSo(so1,so2,){
+            if(typeof(so1)=="number"&&typeof(so2)=="number"){
+                let tong=so1+so2;
+                document.write("<br>");
+                document.write("tổng 2 số là: "+tong);
+            }
+        }
+        var soThu1=Number(prompt("nhập số thứ nhất",""));
+        var soThu2=Number(prompt("nhập số thứ hai",""));
+        nhapSo(soThu1,soThu2);
+        //bài về nhà viết hàm tính điểm chữ trên 3 điểm a*0.6,b*0,3,c*0,1
+        
+        function tinhDiem(a,b,c){
+            let diemSo=a*0.6+b*0.3+c*0.1;
+            if(diemSo > 9){
+                document.write("Điểm chữ là A+");
+            }else if(diemSo > 8.5){
+                document.write("Điểm chữ là A");
+            
+            }
+            else if(diemSo > 8){
+                document.write("Điểm chữ là B+");
+            
+            }
+            else if(diemSo > 7){
+                document.write("Điểm chữ là B");
+            
+            }
+            else if(diemSo > 6.5){
+                document.write("Điểm chữ là C+");
+            
+            }
+            else if(diemSo > 5.5){
+                document.write("Điểm chữ là C");
+            
+            }
+            else if(diemSo > 5){
+                document.write("Điểm chữ là D+");
+            
+            }
+            else if(diemSo > 4){
+                document.write("Điểm chữ là D");
+            
+            }
+            else if(diemSo > 0){
+                document.write("Điểm chữ là F");
+            
+            }
+        }
+        tinhDiem(5,5,5)
+    </script>
+</body>
+</html>
