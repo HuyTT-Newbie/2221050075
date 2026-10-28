@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{
+            width: 560;
+            height: 315px;
+            margin: auto;
+            text-align: center;
+            margin: 100px auto;
+            
+        }
+        .danh-sach{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .anh{
+            height: 200px;
+            width: 24%;
+
+        }
+        .anh img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gn2yQYnDMxg?si=-sb2KpuDES8aKqWq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="ten">video</h3>
+    </div>
+    <div class="danh-sach">
+        <div class="anh" onclick="chonAnh(1)">
+            <img src="banner.jpg" alt="">
+            <p>Labrado</p>
+        </div>
+        <div class="anh" onclick="chonAnh(2)">
+            <img src="kfpd.jpg" alt="">
+            <p>Kungfu Panda</p>
+        </div>
+        <div class="anh" onclick="chonAnh(3)">
+            <img src="zootopia.jpg" alt="">
+            <p>Zootopia</p>
+        </div>
+        <div class="anh" >
+            <img onclick="chonAnh(4)" src="anh.png" alt="">
+            <p>Wuwa</p>
+        </div>
+
+    </div>
+    <script>
+        var danhSachVid=[
+            {
+                id:1,
+                ten:"Labrado",
+                duongDanAnh:"banner.jpg",
+                duongDan:"https://www.youtube.com/embed/yrBDTtzVjSI?si=DlBd7Y1h5siNAmt5",
+
+            },
+            {
+                id:2,
+                ten:"Kungfu Panda",
+                duongDanAnh:"kfpd.jpg",
+                duongDan:"https://www.youtube.com/embed/STqJ_Up4iFg?si=rUyyfDqyStW1P6Im",
+
+            },
+            {
+                id:3,
+                ten:"Zootopia",
+                duongDanAnh:"zootopia.jpg",
+                duongDan:"https://www.youtube.com/embed/Y0c3nKWhlIA?si=piQze0G-JiPRG-cp",
+
+            },
+            {
+                id:4,
+                ten:"Wuwa",
+                duongDanAnh:"anh.jpg",
+                duongDan:"https://www.youtube.com/embed/LXyEJPjiMsU?si=b4m89jgx8H6mbZ8t",
+
+            },
+        
+        ]
+
+        function chonAnh(id){
+            for(let i=0;i<danhSachVid.length;i++){
+                if(danhSachVid[i].id==id){
+                    document.getElementsByClassName("ten")[0].innerHTML=danhSachVid[i].ten;
+                    document.getElementsByTagName("iframe")[0].src=danhSachVid[i].duongDan;
+                
+                }
+            }
+        }
+    </script>
+</body>
+</html>
