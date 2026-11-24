@@ -50,15 +50,19 @@
 
     </div>
     <?php
+    include 'connect.php';
     session_start();
     
      if(isset($_POST['tenDangNhap']) && isset($_POST['matKhau']) ){
         $tenDangNhap= $_POST['tenDangNhap'];
         $matKhau= $_POST['matKhau'];
-        if($tenDangNhap=="admin" && $matKhau=="123"){
+
+        $sql= "SELECT * FROM `nguoi_dung` WHERE ten_dang_nhap ='$tenDangNhap' and mat_khau='$matKhau'";
+        $result = mysqli_query($conn,$sql);
+        if(mysqli_num_rows($result) >0){
             
             $_SESSION['dangnhap']="thanhcong";
-            header("Location: trangchu.php");
+            header("Location: index.php");
         }else{
             echo"Tên đăng nhập hoặc mật khẩu không chính xác";
         }
