@@ -77,6 +77,15 @@ include 'connect.php';
             case'xoaphim':
                 include'xoaphim.php';
                 break;
+            case'themdanhmc':
+                include'themdanhmuc.php';
+                break;
+            case'capnhatdanhmuc':
+                include'capnhatdanhmuc.php';
+                break;
+            case'xoadanhmuc':
+                include'xoadanhmuc.php';
+                break;
             
             
         }
